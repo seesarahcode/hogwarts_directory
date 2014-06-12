@@ -1,0 +1,342 @@
+/* Much of the CSS taken from this Lynda.com tutorial:
+    http://www.lynda.com/AngularJS-tutorials/Up-Running-AngularJS/154414-2.html
+  for prototyping purposes */
+
+@import url(http://fonts.googleapis.com/css?family=Chelsea+Market);
+@import url(http://fonts.googleapis.com/css?family=Telex);
+
+/* Reset Styles */
+
+html, body, div, 
+h1, h2, h3, p, 
+a, dfn, em, img,
+b, u, i, center,
+ol, ul, li,
+fieldset, form, label, 
+table, caption,
+article, figure, footer, header, section  {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; 
+}
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+
+/* Base Styles */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+html {
+  background-color: #282828;
+}
+
+body  {
+  font-family: 'Telex', serif;
+  font-size: 1rem;
+  line-height: 160%;
+  *zoom: 1;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Chelsea Market', serif;
+  font-weight: normal;
+  text-shadow: 1px 1px rgb(255,255,255, 1);
+}
+
+a {
+  color: #145266;
+  font-family: 'Telex', serif;
+}
+
+h1{
+  font-size: 2.2rem;
+  line-height: 100%;
+  margin-bottom: 10px;
+}
+
+h2{ 
+  font-size: 1.5rem;
+  line-height: 90%;
+  color: #000066;
+  margin-top: 5px;
+  margin-bottom:5px;
+  text-align: center;
+}
+
+h3{ 
+  margin-top: 10px;
+  color: #bd3613;
+  line-height: 110%;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+p {
+  line-height: 1.3rem;
+  color: #475B62;
+  margin-bottom: 10px;
+  font-family: 'Telex', sans-serif;
+}
+
+a.small {
+  line-height: 100%;
+  font-size: .9rem;
+}
+footer {
+  font-family: 'Telex', sans-serif;
+  font-size: 0.75em;
+  background-color: #fff;
+  margin-top:30px;
+  padding:3px;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  text-align: center;
+  background-color:rgba(255,255,255,0.5);
+}
+
+/* Search Styles */
+
+.search {
+  background: #FFFFCC;
+  color: #000;
+  width: 90%;
+  min-width: 320px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  padding: 40px 30px;
+  z-index: 20;
+}
+
+.search h1 {
+  color: #680000;
+  text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 140%;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #C61C6F;
+    color: #FCF4DC;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+         -o-user-select: none;
+            user-select: none;
+}
+
+.btn .btn-left {
+  float: left;
+}
+
+.btn .btn-right {
+  float: right;
+}
+
+.btn:hover {
+    background: #09576D;
+}
+
+.search label {
+  display: none;
+}
+
+.search input {
+  font-family: 'Telex', sans-serif;
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+  font-size: 1rem;
+  color: #475B62;
+  background: rgba(255,255,255,0.4);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 10px;
+  outline: 0;
+  margin-bottom:25px;
+  margin-top:15px;
+}
+
+.search .formgroup input {
+  border: 1px solid rgba(0,0,0,0.3);
+  display: inline;
+  width: auto;
+}
+
+.search label.formgroup {
+  display: inline;
+  width: auto;
+  margin-top:25px;
+}
+
+.search select {
+  display: inline;
+  padding: 5px 5px 5px 5px;
+  font-size: 1rem;
+  color: #475B62;
+  background: rgba(255,255,255,0.4);
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 10px;
+  outline: 0;
+}
+
+/* Student Directory Styles */
+
+.studentlist {
+  background: #d0d0d0;
+  width: 50%;
+  min-width: 290px;
+  max-width:350px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 0 0 20px 20px;
+  opacity: .95;
+  z-index: 10;
+}
+
+.studentlist ul {
+  margin: 0;
+  padding: 0;
+  background: #FDF6E3;
+}
+
+.studentlist li {
+  margin: 0;
+  padding: 10px 10px 0 10px;
+  border-bottom: 1px dotted black;
+  opacity: .9;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.studentlist a {
+  display: block;
+  text-decoration: none;
+}
+
+.studentlist li:hover {
+  background: #FDF6E3;
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.student img {
+  display: block;
+  float: left;
+  width: 60px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.student info {
+  display: block;
+  float: left;
+  padding-left: 120px !important;
+}
+
+.student:last-child {
+  border-bottom:none;
+}
+
+.studentinfo {
+  font-size: 1.1em;
+  line-height: 160%;
+  background: #EEE8D5;
+  color: #0F4150;
+  width: 90%;
+  min-width: 320px;
+  max-width: 620px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  z-index: 20;
+}
+
+.studentinfo h1{
+  font-size: 1.8em;
+  margin-bottom: 0;
+}
+
+.studentinfo img {
+  width: 40%;
+  max-width: 130px;
+  border-radius: 20px;
+}
+
+.student.ng-enter.ng-enter-active,
+.student.ng-leave {
+  opacity: 1;
+  height: 80px;
+  overflow: hidden;
+}
+
+.student.ng-leave.ng-leave-active,
+.student.ng-enter {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}

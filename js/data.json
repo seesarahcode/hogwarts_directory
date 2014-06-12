@@ -1,0 +1,58 @@
+[
+{
+		"name" 		: "Harry Potter",
+		"shortname"	:	"Harry",
+		"house"		: "Gryffindor",
+		"year"		: "7",
+		"skills"	: "Defense Against the Dark Arts, evading death"
+	},
+	{
+		"name" 		: "Hermione Granger",
+		"shortname"	:	"Hermione",
+		"house" 	: "Gryffindor",
+		"year"		: "7",
+		"skills"	: "Charms, being the smartest witch of her age"
+	},
+	{
+		"name" 		: "Ron Weasley",
+		"shortname"	:	"Ron",
+		"house" 	: "Gryffindor",
+		"year"		: "7",
+		"skills"	: "Quidditch, NOT SPIDERS!"
+	},
+	{
+		"name" 		: "Luna Lovegood",
+		"shortname"	:	"Luna",
+		"house" 	: "Ravenclaw",
+		"year"		: "7",
+		"skills"	: "Magical creatures, eccentricity"
+	},	
+	{
+		"name" 		: "Hannah Abbott",
+		"shortname"	:	"Hannah",
+		"house" 	: "Hufflepuff",
+		"year"		: "7",
+		"skills"	: "Defense Against the Dark Arts, herbology"
+	},
+	{
+		"name" 		: "Draco Malfoy",
+		"shortname"	:	"Draco",
+		"house" 	: "Slytherin",
+		"year"		: "7",
+		"skills"	: "The Dark Arts, sneering"
+	},
+	{
+		"name" 		: "Cho Chang",
+		"shortname"	:	"Cho",
+		"house" 	: "Ravenclaw",
+		"year"		: "7",
+		"skills"	: "Quidditch, Defense Against the Dark Arts"
+	},
+	{
+		"name" 		: "Ginny Weasley",
+		"shortname"	:	"Ginny",
+		"house" 	: "Gryffindor",
+		"year"		: "6",
+		"skills"	: "Quidditch, journaling with evil forces"
+	}
+]

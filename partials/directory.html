@@ -1,0 +1,40 @@
+<section class="studentpage">
+	<div class="search">
+	<h1>Hogwarts Student Directory</h1>
+	 
+	 <label>Search: </label>
+    <input ng-model="query" placeholder="Search for students" autofocus>
+
+		<label class="formgroup"> Sort by:
+			<select ng-model="studentOrder">
+				<option value="name">name</option>
+				<option value="house">house</option>
+			</select>
+		</label>
+
+		<label class="formgroup">
+      <input type="radio" ng-model="direction" name="direction" checked>
+      ascending
+     </label>
+    <label class="formgroup">
+      <input type="radio" ng-model="direction" name="direction" value="reverse">
+      descending
+    </label>
+  </div>
+  		<!-- Student directory table here -->
+  <ul class="studentlist" ng-show="query">
+  	<li ng-animate="'animate" class="student cf" ng-repeat="item in students | filter: query | orderBy: studentOrder:direction">
+  		<a href="#/details/{{students.indexOf(item)}}">
+  			<img ng-src="img/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">
+  			<div class="info">
+  				<h2>{{item.name}}</h2>
+  				<h3>{{item.house}}</h3>
+  			</div>
+  		</a>
+  	</li>
+  </ul>
+</section>
+
+
+
+		<!-- Rows include name, house, skills, year-->
